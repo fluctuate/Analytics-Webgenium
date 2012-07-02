@@ -26,15 +26,17 @@ class plgSystemBigshotgoogleanalytics extends JPlugin
    
    function onAfterRender()
    {
-      global $mainframe;
+     $mainframe = &JFactory::getApplication();
       
       $params = &JComponentHelper::getParams( 'com_analytics' );
       $web_property_id = $params->get('webPropertyId', '');
       
-      if($web_property_id == '' || $mainframe->isAdmin() || strpos($_SERVER["PHP_SELF"], "index.php") === false)
-      {
-         return;
-      }
+      
+	  
+	  if ($mainframe->isAdmin())
+		{
+			return;
+		}
 
       $buffer = JResponse::getBody();
 

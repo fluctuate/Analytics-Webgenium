@@ -6,7 +6,7 @@
  @authorUrl http://webgenium.com.br/v2/estatisticas-joomla
  @copyright Copyright (C) 2011 Webgenium
  @license GNU/GPL
- @version 1.9
+ @version 2.0
  @description Componente Analytics Webgenium. Este componente é uma implementação do com_analytics. 
  Possui algumas funcionalidades a mais, como gráfico animado, tradução em pt-br e mostra as estatísticas do Google Analytics do site cadastrado de uma forma mais rápida e totalmente integrada.
 **/
@@ -24,4 +24,3 @@ Funcionalidades:
 
 * Para funcionar completamente, instale os plugins que estão no repositório também
 ** BigShotAnalytics
-** JAnalyticsVirtuemart
